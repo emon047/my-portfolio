@@ -6,8 +6,8 @@
     --glass-border: rgba(255, 255, 255, 0.1);
 }
 
-/* Base Resets */
-* {
+
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -21,32 +21,27 @@ html {
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
-    overflow: hidden; /* Hide main body scroll to use .scroll-container */
+    overflow: hidden; 
 }
 
-/* The Shell Container */
+
 .scroll-container {
     height: 100vh;
     overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-    scrollbar-width: none; /* Firefox: Hide scrollbar */
 }
 
 .scroll-container::-webkit-scrollbar {
-    display: none; /* Chrome/Safari: Hide scrollbar for a cleaner look */
+    display: none; 
 }
 
-/* Iframe Section Styling */
+
 .section-frame {
     width: 100%;
     height: 100vh;
-    border: none; /* Removes iframe border */
-    display: block;
-    scroll-snap-align: start;
+    border: none; 
 }
 
-/* Shared Frame Body Class 
-   Apply this to the <body> tag inside home.html, about.html, etc. */
+
 .frame-body {
     background: transparent;
     height: 100vh;
@@ -57,7 +52,7 @@ body {
     overflow: hidden;
 }
 
-/* Trendy Navbar */
+
 .navbar {
     position: fixed;
     top: 0;
@@ -66,21 +61,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 9999; /* Ensure it stays above iframes */
-    background: linear-gradient(to bottom, rgba(11, 11, 11, 0.8), transparent);
-    backdrop-filter: blur(5px);
 }
 
 .logo {
-    font-size: 1.6rem;
+    font-size: 200%;
     font-weight: 900;
-    letter-spacing: -1px;
     text-transform: uppercase;
-}
-
-.logo b {
-    color: var(--accent-color);
-    text-shadow: 0 0 10px var(--accent-color);
 }
 
 .nav-links {
@@ -104,7 +90,7 @@ body {
     color: var(--accent-color);
 }
 
-/* Hover underline effect */
+
 .nav-links a::after {
     content: '';
     position: absolute;
@@ -121,8 +107,6 @@ body {
 }
 
 
-
-/* Footer Snapping */
 .main-footer {
     height: 100px;
     width: 100%;
@@ -130,7 +114,7 @@ body {
     justify-content: center;
     align-items: center;
     background: #000;
-    color: rgba(255, 255, 255, 0.3);
+    color: white;
     font-size: 0.75rem;
     scroll-snap-align: end;
     border-top: 1px solid var(--glass-border);
