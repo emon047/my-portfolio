@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="contact.css"> 
+</head>
+<body class="frame-body">
+
+    <div class="contact-card">
+        <header class="form-header">
+            <h2>Let's Connect</h2>
+            <p>I'm always open to discussing new projects.</p>
+        </header>
+
+        <form id="contactForm">
+            <div class="input-stack">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <select name="department">
+                    <option value="">Select Department</option>
+                    <option value="cse">Computer Science</option>
+                    <option value="eee">Electrical Engineering</option>
+                </select>
+            </div>
+
+            <div class="selection-section">
+                <span class="section-label">Contact Via</span>
+                <div class="chip-grid">
+                    <label class="chip">
+                        <input type="radio" name="contact" checked>
+                        <span class="chip-box">Email</span>
+                    </label>
+                    <label class="chip">
+                        <input type="radio" name="contact">
+                        <span class="chip-box">Phone</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="selection-section">
+                <span class="section-label">Interests</span>
+                <div class="chip-grid">
+                    <label class="chip"><input type="checkbox"><span class="chip-box">Web</span></label>
+                    <label class="chip"><input type="checkbox"><span class="chip-box">Prog</span></label>
+                    <label class="chip"><input type="checkbox"><span class="chip-box">DB</span></label>
+                </div>
+            </div>
+
+            <textarea rows="3" placeholder="Your Message..."></textarea>
+
+            <div class="form-actions">
+                <button type="submit" class="btn-main">Send Message</button>
+                <div class="btn-sub-group">
+                    <button type="reset" class="btn-sub">Reset</button>
+                    <button type="button" class="btn-sub" onclick="alert('System Online')">Status</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

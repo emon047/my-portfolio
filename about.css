@@ -1,0 +1,114 @@
+.about-simple-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 120px; /* Increased gap for a more open feel */
+    width: 90%;
+    max-width: 1200px; /* Wider container */
+    padding: 40px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Content Blocks */
+.content-block {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 35px; /* More space between internal elements */
+}
+
+.sub-heading {
+    font-size: 0.9rem; /* Slightly larger */
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    color: var(--accent-color);
+    margin-bottom: 10px;
+}
+
+.large-p {
+    font-size: 1.5rem; /* Larger, bolder text for the main bio */
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 40px;
+}
+
+/* Education List */
+.edu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.edu-title {
+    display: block;
+    font-weight: 700;
+    font-size: 1.3rem; /* Larger titles */
+    color: #fff;
+}
+
+.edu-sub {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.4);
+    margin-top: 5px;
+}
+
+/* Vertical Divider */
+.divider {
+    width: 1px;
+    height: 450px; /* Longer line to match expanded content */
+    background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.1), transparent);
+}
+
+/* Skills List */
+.simple-skills {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px; /* More breathing room */
+    margin-bottom: 50px;
+}
+
+.simple-skills li {
+    font-size: 1.1rem; /* Larger skill text */
+    color: rgba(255, 255, 255, 0.7);
+    padding-left: 20px;
+    position: relative;
+}
+
+.simple-skills li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    background: var(--accent-color);
+    border-radius: 50%;
+}
+
+/* Table Adjustment */
+.simple-table {
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 30px;
+}
+
+.label-td {
+    padding: 15px 0;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.accent-td {
+    text-align: right;
+    font-size: 1.2rem;
+    color: var(--accent-color) !important;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
