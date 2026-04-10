@@ -1,35 +1,33 @@
-/* Container: Shorter outer size */
 .contact-card {
     width: 95%;
-    max-width: 460px; /* Slimmer outer frame */
+    max-width: 460px;
     background: #0f0f0f;
-    padding: 30px; /* Reduced outer padding for a shorter look */
-    border-radius: 24px;
+    padding: 30px;
+    border-radius: 25px;
     border: 1px solid #222;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
 }
 
 .form-header {
     text-align: center;
-    margin-bottom: 25px; /* Tighter header space */
+    margin-bottom: 25px;
 }
 
 .form-header h2 {
-    font-size: 2rem;
+    font-size: 30px;
     color: white;
     margin-bottom: 5px;
 }
 
 .form-header p {
-    color: #555;
+    color: white;
     font-size: 0.85rem;
 }
 
-/* Form Layout: Adjusted inside size */
+
 form {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Tighter internal gaps */
+    gap: 15px;
 }
 
 .input-stack {
@@ -38,30 +36,33 @@ form {
     gap: 10px;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
     background: #161616;
     border: 1px solid #2a2a2a;
-    padding: 12px 15px; /* Slimmer internal input size */
+    padding: 12px 15px;
     border-radius: 10px;
     color: white;
-    font-size: 0.9rem;
+    font-size: 15px;
     width: 100%;
 }
 
-input:focus, select:focus, textarea:focus {
+input:focus,
+select:focus,
+textarea:focus {
     border-color: #00d2ff;
     outline: none;
 }
 
-/* Selection Section */
 .selection-section {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
 }
 
 .section-label {
-    font-size: 0.65rem;
+    font-size: 12px;
     color: white;
     text-transform: uppercase;
     font-weight: 800;
@@ -73,29 +74,34 @@ input:focus, select:focus, textarea:focus {
     gap: 8px;
 }
 
-.chip { flex: 1; cursor: pointer; }
-.chip input { display: none; }
+.chip {
+    flex: 1;
+    cursor: pointer;
+}
+
+.chip input {
+    display: none;
+}
 
 .chip-box {
     display: block;
-    padding: 10px; /* Thinner chip height */
+    padding: 10px;
     background: #161616;
     border: 1px solid #2a2a2a;
     border-radius: 10px;
     color: #666;
     text-align: center;
-    font-size: 0.75rem;
+    font-size: 14px;
     font-weight: 600;
-    transition: 0.3s;
+    transition: 0.5s ease;
 }
 
-.chip input:checked + .chip-box {
+.chip input:checked+.chip-box {
     background: rgba(0, 210, 255, 0.05);
     border-color: #00d2ff;
     color: #00d2ff;
 }
 
-/* Buttons */
 .form-actions {
     display: flex;
     flex-direction: column;
@@ -109,11 +115,10 @@ input:focus, select:focus, textarea:focus {
     border: none;
     font-weight: 800;
     color: black;
-    background:rgba(0,242,255);
+    background: rgba(0, 242, 255);
     cursor: pointer;
-    font-size: 0.9rem;
+    font-size: 15px;
 }
-
 
 .btn-sub-group {
     display: flex;
